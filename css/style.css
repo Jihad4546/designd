@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.navber input:checked~nav ul{
+    display: block
+}
