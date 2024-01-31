@@ -11,10 +11,10 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <!-- header start here  -->
     <header>
-      <section>
+      <section class="hidden md:block">
         <div class="text-center">
           <div class="md:flex md:w-10/12 md:mx-auto md:justify-between md:items-center md:mt-0">
             <div>
@@ -26,10 +26,10 @@
               </form>
             </div>
             <div class="mt-3">
-              <a href="#"><i class="fa-brands fa-instagram text-2xl hover:text-red-500 transition-colors"></i></a>
-              <a href="#"><i class="fa-brands fa-facebook-f  ml-4 text-2xl hover:text-red-500 transition-colors"></i></a>
-             <a href="#"> <i class="fa-brands fa-twitter ml-4 text-2xl hover:text-red-500 transition-colors"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin ml-4 text-2xl hover:text-red-500 transition-colors"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram text-2xl hover:text-red-500 transition-all hover:transition duration-500 "></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f  ml-4 text-2xl hover:text-red-500 transition-all hover:transition duration-500"></i></a>
+             <a href="#"> <i class="fa-brands fa-twitter ml-4 text-2xl hover:text-red-500 transition-all hover:transition duration-500"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin ml-4 text-2xl hover:text-red-500 transition-all hover:transition duration-500"></i></a>
             </div>
           </div>
           <hr class=" h-2  text-slate-800">
@@ -46,28 +46,37 @@
                     <i class="fa-solid fa-bars text-3xl"></i>
                   </label>
                 <ul class="w-46 lg:ml-6 text-center absolute -ml-32 hidden bg-[url('../img/bg.png')] rounded-2xl bg-cover  lg:bg-none lg:flex lg:items-center lg:relative lg:w-full">
-                    <li class="mt-4"><a class="text-white text-[25px] md:text-black md:text-xl lg:hover:text-orange-500 lg:hover:underline hover:transition-colors" href="#">Home</a></li>
-                    <li class="mt-4"><a class="px-7 py-4 text-white text-[25px] lg:text-black md:text-xl lg:hover:text-orange-500 lg:hover:underline hover:transition-colors" href="#">About</a></li>
-                    <li class="mt-4"><a class="px-7 py-4 text-white text-[25px] lg:text-black md:text-xl lg:hover:text-orange-500 lg:hover:underline hover:transition-colors" href="#">Furniture</a></li>
-                    <li class="mt-4"><a class="px-7 py-4 text-white text-[25px] lg:text-black md:text-xl lg:hover:text-orange-500 lg:hover:underline hover:transition-colors" href="#">Catalogue</a></li>
-                    <li class="mt-4"><a class="px-7 py-4 text-white text-[25px] lg:text-black md:text-xl lg:hover:text-orange-500 lg:hover:underline hover:transition-colors" href="#">FAO</a></li>
+                    <li class="mt-4"><a class="text-white text-[25px] md:text-black md:text-xl lg:hover:text-orange-500 lg:hover:underline hover:transition duration-500 transition-all" href="#">Home</a></li>
+                    <li class="mt-4"><a class="px-7 py-4 text-white text-[25px] lg:text-black md:text-xl lg:hover:text-orange-500 lg:hover:underline  hover:transition duration-500 transition-all" href="#">About</a></li>
+                    <li class="mt-4"><a class="px-7 py-4 text-white text-[25px] lg:text-black md:text-xl lg:hover:text-orange-500 lg:hover:underline  hover:transition duration-500 transition-all" href="#">Furniture</a></li>
+                    <li class="mt-4"><a class="px-7 py-4 text-white text-[25px] lg:text-black md:text-xl lg:hover:text-orange-500 lg:hover:underline  hover:transition duration-500 transition-all" href="#">Catalogue</a></li>
+                    <li class="mt-4"><a class="px-7 py-4 text-white text-[25px] lg:text-black md:text-xl lg:hover:text-orange-500 lg:hover:underline  hover:transition duration-500 transition-all" href="#">FAO</a></li>
                 </ul>
                 </nav>
                 <div class="-ml-16 lg:order-5"> 
-                   <a class="px-8 py-4 text-orange-500 hover:underline transition-colors" href="#">Sign In</a>
-                   <a class="px-8 py-3 bg-orange-500 text-white rounded-full hover:border hover:border-red-500 hover:bg-none" href="#">Sign Up</a>
+                   <a class="px-8 py-4 text-orange-500 hover:underline  hover:transition duration-500 transition-all" href="#">Sign In</a>
+                   <a class="px-8 py-3 bg-orange-500 text-white rounded-full hover:border hover:border-red-500 hover:bg-none  hover:transition duration-500 transition-all" href="#">Sign Up</a>
                 </div>
             </div>
+            <!-- js alert  -->
+
+            <div id="close" class="relative w-1/2 mx-auto lg:ml-[450px] mt-20 ">
+             
+              <img  class=" rounded-xl absolute shadow-box-shodow w-[400px]  h-[350px]" src="img/pexels-daniel-eliashevsky-6942301.jpg" alt="">
+              <i id="icon" class="fa-solid fa-xmark absolute -mt-3 -ml-2 text-3xl cursor-pointer"></i>
+              <h3 class="text-white absolute text-6xl w-64 ml-16 mt-8">Welcome to Our e-commerce project</h3>
+            </div>
+            <!-- js alert  -->
       </section>
       <!-- section hero start header  -->
       <section>
           <div class="text-center mt-9 md:flex md:justify-between md:items-center md:container md:mx-auto">
             <div class="flex flex-col flex-wrap">
-              <h2 class="text-xl font-semibold">Perfect  <br>
+              <h2 class="text-4xl leading-10 font-semibold">Perfect  <br>
                 Harmony: <br>
                  Comfort & Style</h2>
                  <p class="mb-5 text-md">Explore furniture that harmoniously combines comfort <br> and style to elevate your home</p>
-                 <a class="p-2 rounded-full text-[20px] hover:border-2 border-black w-52 mx-auto bg-[#ffee32] hover:bg-white " href="#">Explore Our Offers</a>
+                 <a class="p-2 rounded-full text-[20px] hover:border-2 border-black w-52 mx-auto bg-[#ffee32] hover:bg-white  hover:transition duration-500 transition-all " href="#">Explore Our Offers</a>
                  <a class="text-[20px] text-gray-600 w-52 mx-auto" href="#"><i class="fa-solid fa-play  rounded-full p-2 shadow-box-shodow "></i>Watch Video</a>
             </div>
           <div class="flex justify-center items-center w-10/12 mx-auto md:w-auto">
@@ -85,18 +94,18 @@
         <div>
           <div class="container mx-auto  md:flex md:justify-between md:gap-4 md:flex-wrap">
             <div class="shadow-box-shodow bg-gray-200 rounded-xl mt-4 relative mx-auto md:max-w-none w-[320px]">
-               <p class="absolute mt-32 ml-7">Chairs</p>
-               <a class="absolute mt-40 ml-3 shadow-box-shodow bg-white px-4 py-2   rounded-xl hover:bg-red-200 hover:transition-colors" href="#">See More</a>
+               <p class="absolute mt-44 ml-7">Chairs</p>
+               <a class="absolute mt-52 ml-3 shadow-box-shodow bg-white px-4 py-2   rounded-xl hover:bg-red-200 hover:transition duration-500 transition-all " href="#">See More</a>
                <img class="w-auto mx-auto pb-24" src="img/img1.png" alt="">
              </div>
              <div class="shadow-box-shodow bg-gray-200 rounded-xl mt-4 relative  w-[320px]  mx-auto md:max-w-none ">
-              <p class="absolute mt-32 ml-7">Chairs</p>
-              <a class="absolute mt-40 ml-3 shadow-box-shodow bg-white px-4 py-2 rounded-xl hover:bg-red-200 hover:transition-colors" href="#">See More</a>
+              <p class="absolute mt-44 ml-7">Chairs</p>
+              <a class="absolute mt-52 ml-3 shadow-box-shodow bg-white px-4 py-2 rounded-xl hover:bg-red-200  hover:transition duration-500 transition-all" href="#">See More</a>
               <img class="w-auto mx-auto pb-24" src="img/img1.png" alt="">
             </div>
             <div class="shadow-box-shodow bg-gray-200 rounded-xl mt-4 relative  w-[320px]  mx-auto md:max-w-none ">
-              <p class="absolute mt-32 ml-7">Chairs</p>
-              <a class="absolute mt-40 ml-3 shadow-box-shodow bg-white px-4 py-2 rounded-xl hover:bg-red-200 hover:transition-colors" href="#">See More</a>
+              <p class="absolute mt-44 ml-7">Chairs</p>
+              <a class="absolute mt-52 ml-3 shadow-box-shodow bg-white px-4 py-2 rounded-xl hover:bg-red-200  hover:transition duration-500 transition-all" href="#">See More</a>
               <img class="w-auto mx-auto pb-24" src="img/img1.png" alt="">
             </div>
             
@@ -105,25 +114,376 @@
         </div>
       </section>
       <section>
-        <div>
-          <div>
-            <div>
-              <h4>Check Our Product</h4>
-              <h2>Crafted with excellent material</h2>
+        <div class="w-10/12 mx-auto md:container">
+          
+            <div class="text-center lg:text-left">
+              <h4 class="shadow-box-shodow w-52 mt-3 py-3 px-3 rounded-2xl text-red-500 text-xl mx-auto lg:text-left lg:mx-0">Check Our Product</h4>
+              <h2 class="px-3 mt-1">Crafted with excellent material</h2>
             </div>
             <div>
-              <ul>
+              <!-- <ul>
                 <li><a href="#">Best Seller</a></li>
                 <li><a href="#">Chair</a></li>
                 <li><a href="#">tables</a></li>
                 <li><a href="#">Bed</a></li>
                 <li><a href="#">Closet</a></li>
-              </ul>
+              </ul> -->
+            </div>
+          
+        </div>
+      </section>
+      <!-- product section start here  -->
+      <section>
+        <div class="container mx-auto">
+          <div class="sm:flex gap-2 flex-wrap">
+            
+            <div class="w-80 mx-auto shadow-box-shodow border-2 border-gray-300 rounded-2xl sm:w-56 mt-3">
+              <img class="w-72 mx-auto mt-3 rounded-2xl sm:w-full sm:mt-0 sm:rounded-xl h-60" src="img/product1.png" alt="">
+              <h3 class="ml-3 text-xl">Fabric Chair</h3>
+              <span class="text-gray-400 ml-3"><del>$105.00</del></span>
+              <span class="">$95.00</span>
+              <i class="fa-solid fa-cart-shopping ml-32 sm:ml-12 text-2xl"></i>
+             </div>
+             <div class="w-80 mx-auto shadow-box-shodow border-2 border-gray-300 rounded-2xl sm:w-56 mt-3">
+              <img class="w-72 mx-auto mt-3 rounded-2xl sm:w-full sm:mt-0 sm:rounded-xl h-60" src="img/product2.png" alt="">
+              <h3 class="ml-3 text-xl">Fabric Chair</h3>
+              <span class="text-gray-400 ml-3"><del>$105.00</del></span>
+              <span class="">$95.00</span>
+              <i class="fa-solid fa-cart-shopping ml-32 sm:ml-12 text-2xl"></i>
+             </div>
+             <div class="w-80 mx-auto shadow-box-shodow border-2 border-gray-300 rounded-2xl sm:w-56 mt-3">
+              <img class="w-72 mx-auto mt-3 rounded-2xl sm:w-full sm:mt-0 sm:rounded-xl h-60" src="img/product3.png" alt="">
+              <h3 class="ml-3 text-xl">Fabric Chair</h3>
+              <span class="text-gray-400 ml-3"><del>$105.00</del></span>
+              <span class="">$95.00</span>
+              <i class="fa-solid fa-cart-shopping ml-32 sm:ml-12 text-2xl"></i>
+             </div>
+             <div class="w-80 mx-auto shadow-box-shodow border-2 border-gray-300 rounded-2xl sm:w-56 mt-3">
+              <img class="w-72 mx-auto mt-3 rounded-2xl sm:w-full sm:mt-0 sm:rounded-xl h-60" src="img/product4.png" alt="">
+              <h3 class="ml-3 text-xl">Fabric Chair</h3>
+              <span class="text-gray-400 ml-3"><del>$105.00</del></span>
+              <span class="">$95.00</span>
+              <i class="fa-solid fa-cart-shopping ml-32 sm:ml-12 text-2xl"></i>
+             </div>
+             <div class="w-80 mx-auto shadow-box-shodow border-2 border-gray-300 rounded-2xl sm:w-56 mt-3">
+              <img class="w-72 mx-auto mt-3 rounded-2xl sm:w-full sm:mt-0 sm:rounded-xl h-60" src="img/product5.png" alt="">
+              <h3 class="ml-3 text-xl">Fabric Chair</h3>
+              <span class="text-gray-400 ml-3"><del>$105.00</del></span>
+              <span class="">$95.00</span>
+              <i class="fa-solid fa-cart-shopping ml-32 sm:ml-12 text-2xl"></i>
+             </div>
+             <div class="w-80 mx-auto shadow-box-shodow border-2 border-gray-300 rounded-2xl sm:w-56 mt-3">
+              <img class="w-72 mx-auto mt-3 rounded-2xl sm:w-full sm:mt-0 sm:rounded-xl h-60" src="img/product6.png" alt="">
+              <h3 class="ml-3 text-xl">Fabric Chair</h3>
+              <span class="text-gray-400 ml-3"><del>$105.00</del></span>
+              <span class="">$95.00</span>
+              <i class="fa-solid fa-cart-shopping ml-32 sm:ml-12 text-2xl"></i>
+             </div>
+             <div class="w-80 mx-auto shadow-box-shodow border-2 border-gray-300 rounded-2xl sm:w-56 mt-3">
+              <img class="w-72 mx-auto mt-3 rounded-2xl sm:w-full sm:mt-0 sm:rounded-xl h-60" src="img/product11.png" alt="">
+              <h3 class="ml-3 text-xl">Fabric Chair</h3>
+              <span class="text-gray-400 ml-3"><del>$105.00</del></span>
+              <span class="">$95.00</span>
+              <i class="fa-solid fa-cart-shopping ml-32 sm:ml-12 text-2xl"></i>
+             </div>
+             <div class="w-80 mx-auto shadow-box-shodow border-2 border-gray-300 rounded-2xl sm:w-56 mt-3">
+              <img class="w-72 mx-auto mt-3 rounded-2xl sm:w-full sm:mt-0 sm:rounded-xl h-60" src="img/product8.png" alt="">
+              <h3 class="ml-3 text-xl">Fabric Chair</h3>
+              <span class="text-gray-400 ml-3"><del>$105.00</del></span>
+              <span class="">$95.00</span>
+              <i class="fa-solid fa-cart-shopping ml-32 sm:ml-12 text-2xl"></i>
+             </div>
+             <div class="w-80 mx-auto shadow-box-shodow border-2 border-gray-300 rounded-2xl sm:w-56 mt-3">
+              <img class="w-72 mx-auto mt-3 rounded-2xl sm:w-full sm:mt-0 sm:rounded-xl h-60" src="img/product15.png" alt="">
+              <h3 class="ml-3 text-xl">Fabric Chair</h3>
+              <span class="text-gray-400 ml-3"><del>$105.00</del></span>
+              <span class="">$95.00</span>
+              <i class="fa-solid fa-cart-shopping ml-32 sm:ml-12 text-2xl"></i>
+             </div>
+             <div class="w-80 mx-auto shadow-box-shodow border-2 border-gray-300 rounded-2xl sm:w-56 mt-3">
+              <img class="w-72 mx-auto mt-3 rounded-2xl sm:w-full sm:mt-0 sm:rounded-xl h-60" src="img/product12.png" alt="">
+              <h3 class="ml-3 text-xl">Fabric Chair</h3>
+              <span class="text-gray-400 ml-3"><del>$105.00</del></span>
+              <span class="">$95.00</span>
+              <i class="fa-solid fa-cart-shopping ml-32 sm:ml-12 text-2xl"></i>
+             </div>
+           
+            
+          </div>
+        </div>
+      </section>
+      <!-- product section ends here  -->
+      <section>
+        <div>
+          <div class="w-10/12 mx-auto sm:flex sm:justify-between mt-10">
+            <div class="w-2/3 mx-auto mt-6">
+              <h3 class=" text-center text-3xl">Elevate Your Space with Uncompromising Quality</h3>
+              <p class="mt-3 leading-8 text-xl">Experience the epitome of furniture quality. Our products are meticulously crafted with an unwavering commitment to excellence. From the finest materials to expert craftsmanship, each piece embodies durability, comfort, and timeless style. Elevate your space with the assurance of exceptional quality and lasting beauty</p>
+              <div>
+                <div class="flex mt-2">
+                  <img src="img/Subtract.png" alt="">
+                  <span class="mt-1">Experience Unparalleled Quality</span>
+                 </div>
+                 <div class="flex my-3">
+                  <img  src="img/Subtract.png" alt="">
+                  <span class="mt-1">Experience Unparalleled Quality</span>
+                 </div>
+                 <div class="flex mb-3">
+                  <img src="img/Subtract.png " alt="">
+                  <span class="mt-1" >Experience Unparalleled Quality</span>
+                 </div>
+            
+              </div>
+              <button class="py-2 px-6 rounded-full bg-black hover:transition-all duration-700"><a  class="text-white hover:transition-all duration-700" href="#">Shop now</a></button>
+            </div>
+            <div class="w-[90%]  mx-auto mt-5">
+              <img class="w-[90%] h-[500px] mx-auto rounded-xl" src="img/product12.png" alt="">
             </div>
           </div>
         </div>
       </section>
+      <section>
+        <div>
+          <div class="container mx-auto  md:flex md:justify-between md:gap-4 md:flex-wrap">
+            <div class="shadow-box-shodow bg-gray-200 rounded-xl mt-4 relative mx-auto md:max-w-none w-[320px]">
+               <p class="absolute mt-44 ml-7">Chairs</p>
+               <a class="absolute mt-52 ml-3 shadow-box-shodow bg-white px-4 py-2   rounded-xl hover:bg-red-200 hover:transition duration-500 transition-all " href="#">See More</a>
+               <img class="w-auto mx-auto pb-24" src="img/product15.png" alt="">
+             </div>
+             <div class="shadow-box-shodow bg-gray-200 rounded-xl mt-4 relative  w-[320px]  mx-auto md:max-w-none ">
+              <p class="absolute mt-44 ml-7">Chairs</p>
+              <a class="absolute mt-52 ml-3 shadow-box-shodow bg-white px-4 py-2 rounded-xl hover:bg-red-200  hover:transition duration-500 transition-all" href="#">See More</a>
+              <img class="w-auto mx-auto pb-24" src="img/product14.png" alt="">
+            </div>
+            <div class="shadow-box-shodow bg-gray-200 rounded-xl mt-4 relative  w-[320px]  mx-auto md:max-w-none ">
+              <p class="absolute mt-48 ml-7">Chairs</p>
+              <a class="absolute mt-56 ml-3 shadow-box-shodow bg-white px-4 py-2 rounded-xl hover:bg-red-200  hover:transition duration-500 transition-all" href="#">See More</a>
+              <img class="w-auto mx-auto pb-24" src="img/product7.png" alt="">
+            </div>
+           
+            
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div>
+          <div class="w-10/12 mx-auto sm:flex sm:justify-between mt-10">
+            <div class="w-2/3 mx-auto mt-6 order-1">
+              <h3 class=" text-center text-3xl">Elevate Your Mood with Comfortable Furniture</h3>
+              <p class="mt-3 leading-8 text-xl">Your surroundings have a profound impact on your mood. Discover how our high-quality furniture can transform your space into a haven of comfort and happiness. Create an environment that nurtures your well-being and elevates your spirits with the perfect blend of style and coziness.</p>
+              <div>
+                <div class="flex mt-2">
+                  <img src="img/Subtract.png" alt="">
+                  <span class="mt-1">Unmatched Comfort</span>
+                 </div>
+                 <div class="flex my-3">
+                  <img  src="img/Subtract.png" alt="">
+                  <span class="mt-1">Crafted for Quality</span>
+                 </div>
+                 <div class="flex mb-3">
+                  <img src="img/Subtract.png " alt="">
+                  <span class="mt-1" >Stylish Elegance</span>
+                 </div>
+            
+              </div>
+              <button class="py-2 px-6 rounded-full bg-black hover:transition-all duration-700"><a  class="text-white hover:transition-all duration-700" href="#">Shop now</a></button>
+            </div>
+            <div class="w-[90%]  mx-auto mt-5">
+              <img class="w-[90%] h-[300px] sm:h-[500px] mx-auto rounded-xl" src="img/product12.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div>
+          <div class="container mx-auto bg-black md:flex mt-5">
+            <div class="text-center md:w-5/12 mx-auto md:text-left">
+              <h2 class="text-3xl text-white pt-7 md:w-[60%]">Our Dedication to Your Satisfaction</h2>
+              <h4 class="text-white mt-3 w-[80%] mx-auto md:mx-0">we take pride in our unwavering commitment to quality and customer satisfaction. With a track record of excellence, we provide you with the finest furniture and a service you can trust.</h4>
+            <div class="flex w-96 mx-auto justify-between mt-3 md:mx-0">
+              <div>
+                <i class="fa-solid fa-star text-[#f9ca24]"></i>
+                <i class="fa-solid fa-star text-[#f9ca24]"></i>
+                <i class="fa-solid fa-star text-[#f9ca24]"></i>
+                <i class="fa-solid fa-star text-[#f9ca24]"></i>
+                <i class="fa-solid fa-star text-[#f9ca24]"></i>
+                <p class="text-white">4.9 / 5 rating</p>
+                <span class="text-white">Quality</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-star text-[#f9ca24]"></i>
+                <i class="fa-solid fa-star text-[#f9ca24]"></i>
+                <i class="fa-solid fa-star text-[#f9ca24]"></i>
+                <i class="fa-solid fa-star text-[#f9ca24]"></i>
+                <i class="fa-solid fa-star text-[#f9ca24]"></i>
+                <p class="text-white">4.8 / 5 rating</p>
+                <span class="text-white">Customer Satisfaction</span>
+              </div>
+            </div>
+            </div>
+            <div>
+              <div class="flex w-[540px] mx-auto mt-6 ml-6 md:ml-0">
+                <img class="w-16 h-16" src="img/icon2 (2).png" alt="">
+                <div class="ml-7">
+                  <h2 class="text-3xl font-semibold text-white">Quality Craftsmanship</h2>
+                <p class="text-[16px] mt-2 text-white ">Our furniture is meticulously handcrafted to <br> stand the test of time, ensuring it can be enjoyed <br> for generations to come.</p>
+                </div>
+              </div>
+              <div class="flex w-[540px]  mx-auto ml-6 md:ml-0">
+                <img class="w-16 h-16" src="img/icon2 (2).png" alt="">
+                <div class="ml-7">
+                  <h2 class="text-3xl font-semibold text-white">Quality Craftsmanship</h2>
+                <p  class="text-[16px] mt-2 text-white ">Our furniture is meticulously handcrafted to <br> stand the test of time, ensuring it can be enjoyed <br> for generations to come.</p>
+                </div>
+              </div>
+              <div class="flex w-[540px]  mx-auto ml-6 md:ml-0">
+                <img class="w-16 h-16" src="img/icon2 (2).png" alt="">
+                <div class="ml-7">
+                  <h2 class="text-3xl font-semibold text-white">Quality Craftsmanship</h2>
+                <p  class="text-[16px] mt-2 text-white ">Our furniture is meticulously handcrafted to <br> stand the test of time, ensuring it can be enjoyed <br> for generations to come.</p>
+                </div>
+              </div>
+             
+            </div>
+            
+            <div>
+
+            </div>
+          </div>
+          </div>
+      </section>
+      <section>
+        <div class="w-4/5 mx-auto  ">
+          <div class="text-center">
+            <h2 class="mt-4 text-red-600 text-xl">Check Our Collection</h2>
+            <h3 class="mt-1 text-3xl font-semibold">Our Furniture Gallery</h3>
+            <p class="text-sm mb-2 text-gray-400">Explore Our Gallery of Inspiring Designs</p>
+          </div>
+          <div class="flex flex-col items-center sm:flex-row sm:flex-wrap gap-3 sm:justify-between">
+            <div>
+              <img class="w-[600px] rounded-lg sm:w-[280px] sm:h-52" src="img/product19.png" alt="">
+            </div>
+            <div>
+              <img class="w-[600px] rounded-lg sm:w-[280px] sm:h-52" src="img/product18.png" alt="">
+            </div>
+            <div>
+              <img class="w-[600px] rounded-lg sm:w-[380px] sm:h-52" src="img/product17.png" alt="">
+            </div>
+              <div>
+                <img class="w-[600px] rounded-lg sm:w-[380px] sm:h-52" src="img/product19.png" alt="">
+              </div>
+              <div>
+                <img class="w-[600px] rounded-lg sm:w-[280px] sm:h-52" src="img/product18.png" alt="">
+              </div>
+              <div>
+                <img class="w-[600px] rounded-lg sm:w-[280px] sm:h-52" src="img/product17.png" alt="">
+              </div>
+              
+        </div>
+      </section>
+      <section>
+        <div>
+          <div class="text-center">
+            <h2 class="mt-4 text-red-600 text-xl">Testimonial Section</h2>
+            <h3 class="mt-1 text-3xl font-semibold">What Our Customer Say</h3>
+            <p class="text-sm mb-2 text-gray-400">Discover the Stories and Experiences of Our Delighted <br> Customers</p>
+          </div>
+        <div class="container mx-auto  md:flex md:justify-center">
+          <div class="shadow-box-shodow w-[90%] mx-auto md:w-[40%] ">
+            <div class="w-[90%] mx-auto">
+              <img src="img/“.png" alt="">
+               <p>I recently purchased a beautiful dining table and it has completely transformed our dining area. The craftsmanship and attention to detail are truly remarkable. The table is not only a functional piece of furniture but also a work of art that our family and guests admire. The process from selection to delivery was smooth, and the customer support team was incredibly helpful throughout.</p>
+              <div class="flex justify-between">
+             <div class="flex">
+               <img class="rounded-full" src="img/image 18 (1).png" alt="">
+               <span class="ml-2 mb-3">Michael Roberts</span>
+             </div>
+             <div>
+               <i class="fa-solid fa-star text-[#f9ca24]"></i>
+               <i class="fa-solid fa-star text-[#f9ca24]"></i>
+               <i class="fa-solid fa-star text-[#f9ca24]"></i>
+               <i class="fa-solid fa-star text-[#f9ca24]"></i>
+               <i class="fa-solid fa-star text-[#f9ca24]"></i>
+             </div>
+             </div>
+          </div>
+         </div>
+         <div class="shadow-box-shodow  w-[90%] mx-auto md:w-[40%] my-4">
+          <div class="w-[90%] mx-auto">
+            <img src="img/“.png" alt="">
+             <p>I recently purchased a beautiful dining table and it has completely transformed our dining area. The craftsmanship and attention to detail are truly remarkable. The table is not only a functional piece of furniture but also a work of art that our family and guests admire. The process from selection to delivery was smooth, and the customer support team was incredibly helpful throughout.</p>
+            <div class="flex justify-between">
+           <div class="flex">
+             <img class="rounded-full" src="img/image 18.png" alt="">
+             <span class="ml-2 mb-3">Michael Roberts</span>
+           </div>
+           <div>
+             <i class="fa-solid fa-star text-[#f9ca24]"></i>
+             <i class="fa-solid fa-star text-[#f9ca24]"></i>
+             <i class="fa-solid fa-star text-[#f9ca24]"></i>
+             <i class="fa-solid fa-star text-[#f9ca24]"></i>
+             <i class="fa-solid fa-star text-[#f9ca24]"></i>
+           </div>
+           </div>
+        </div>
+           </div>
+        
+        </div>
+        </div>
+      </section>
     </main>
     <!-- main end here  -->
+    <!-- footer start here  -->
+     <footer>
+      <div class="w-4/5 mx-auto mt-6">
+       <div class="flex justify-between flex-wrap">
+        <div>
+          <h1 class="text-5xl font-semibold">LOGO</h1>
+          <p class="text-md text-gray-600 mt-1">Lorem Ipsum is simply <br>dummy text of the printing  <br>and typesetting industry.</p>
+        </div>
+        <div>
+          <h2 class="text-2xl font-medium">Category</h2>
+          <ul>
+            <li class="text-gray-600 mt-1 "><a href="#">Living Room</a></li>
+            <li  class="text-gray-600"><a href="#">Bed Room</a></li>
+            <li  class="text-gray-600"><a href="#">Kitchen</a></li>
+            <li  class="text-gray-600"><a href="#">Bath Room</a></li>
+          </ul>
+        </div>
+        <div >
+          <h2 class="text-2xl font-medium ">Popular Product</h2>
+          <ul>
+            <li  class="text-gray-600 mt-1"><a href="#">Single Sofa Black</a></li>
+            <li  class="text-gray-600"><a href="#">Wooden Bookcase</a></li>
+            <li  class="text-gray-600"><a href="#">Wooden Chair</a></li>
+            <li  class="text-gray-600"><a href="#">Luxury White Bed</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-2xl font-medium ">Sitemap</h2>
+          <ul>
+            <li  class="text-gray-600 mt-1"><a href="#">Product</a></li>
+            <li  class="text-gray-600"><a href="#">Services</a></li>
+            <li  class="text-gray-600"><a href="#">Article</a></li>
+            <li  class="text-gray-600"><a href="#">About Us</a></li>
+          </ul>
+        </div>
+        <div> 
+          <h2 class="text-2xl font-medium ">Follow Us</h2>
+          <ul>
+            <li  class="text-gray-600 mt-1"><a href="#">Facebook</a></li>
+            <li  class="text-gray-600"><a href="#">Instagram</a></li>
+            <li  class="text-gray-600"><a href="#">TikTok</a></li>
+            <li  class="text-gray-600"><a href="#">Youtube</a></li>
+          </ul>
+        </div>
+       </div>
+        <hr class="container mx-auto bg-gray-400 h-[2px] my-3">
+        <p class="my-6">© 2023 by Logo Furniture. All rights reserved.</p>
+     </footer>
+
+    <!-- footer ends here  -->
+    <script src="js/script.js"></script>
   </body>
 </html>
